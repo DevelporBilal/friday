@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.185);
+    font-size: 25px;
+    padding: 15px;
+    align-items: center;
+    top: 0;
+    z-index:1000 ;
+    right: 0;
+    width: 100%;
+    position: fixed;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav .fa-solid{
+    color: red;
+    font-size: 28px;
+}
+.logo{
+ font-size: 23px;
+ margin-left: 39px;
+ color: white
+}
+.clogo{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://thumbs.dreamstime.com/b/black-wall-texture-rough-background-dark-concrete-floor-old-grunge-155553389.jpg) no-repeat center center/cover;
+   text-align: center;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.clogo .cont h2{
+    color: red;
+    font-size: 38px;
+    transform: translateY(30px);
+    animation: smoothFadeUp 1.5s ease-in-out forwards;
+
+}
+.clogo .cont h1{
+ font-size: 45px;
+ transform: translateY(30px);
+    animation: smoothFadeUp 1.5s ease-in-out forwards;
+}
+@keyframes smoothFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.form{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .address{
+    padding: 30px;
+    margin: 30px;
+    line-height: 2.0;
+    width: 50%;
+}
+.form .address .fa-solid{
+    color: red;
+    padding: 10px;
+}
+.form .data{
+    width: 50%;
+    line-height: 1.8;
+    
+}
+.form .data h2{
+    color: red;
+}
+.form .data input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 80%; /* Set width to 100% of the container */
+  height: 40px; /* Adjust height as needed */
+  padding: 30px;
+  font-size: 16px; /* Increase font size for better readability */
+  box-sizing: border-box;
+  border-radius: 10px; /* Ensures padding does not affect the width */
+}
+
+/* Specific style for textareas */
+textarea {
+  height: 100px; /* Set height for the textarea specifically */
+  resize: vertical; /* Allow vertical resizing only */
+}
+input[type="submit"]{
+    color: white;
+    background-color: red;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    
+    transition: all .5s ease;
+    }
+    input[type="submit"]:hover{
+        color: white;
+        background-color: black;
+    }
+    #last{
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://thumbs.dreamstime.com/b/black-wall-texture-rough-background-dark-concrete-floor-old-grunge-155553389.jpg) no-repeat center center/cover;
+       
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+        line-height: 1.8;
+        align-items: center;
+    }
+    #last h2{
+        font-size: 30px;
+        font-family: initial;
+    }
+    #last h1{
+        font-size: 40px;
+        font-style: oblique;
+    }
+    #last input[type="submit"]{
+        margin-top: 100px;
+    }
+    footer{
+        padding: 20px;
+        background-color: black;
+        color: white;
+        display: flex;
+        font-family: inherit;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+    }
+    
+    
+     footer ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 12px;
+    }
+    footer ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        text-decoration: none;
+        color: red;
+        font-size: 20px;
+    
+    }
+    @media only screen and (max-width=900px){
+        .form{
+            width: 100%;
+            height: 80vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }

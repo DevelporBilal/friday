@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.185);
+    font-size: 25px;
+    padding: 15px;
+    align-items: center;
+    top: 0;
+    z-index:1000 ;
+    right: 0;
+    width: 100%;
+    position: fixed;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav .fa-solid{
+    color: red;
+    font-size: 28px;
+}
+.logo{
+ font-size: 23px;
+ margin-left: 39px;
+ color: white
+}
+.maina{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://thumbs.dreamstime.com/b/black-wall-texture-rough-background-dark-concrete-floor-old-grunge-155553389.jpg) no-repeat center center/cover;
+   
+}
+.maina  h1,h2{
+    transform: translateY(30px);
+    animation: smoothFadeUp 1.5s ease-in-out forwards;
+}
+@keyframes smoothFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.maina h2{
+    padding: 10px;
+    margin: 10px;
+    color: red;
+    font-size: 35px;
+}
+.maina h1{
+    padding: 10px;
+    margin: 10px;
+    font-size: 45px;
+}
+    .back{
+        margin: 0; /* Remove default margin */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: black;
+        height: 70vh; /* Full viewport height */
+        overflow: hidden;
+    }
+    .back .backimg{
+        width: 100%;
+        height: 50vh; /* 80% of the viewport height */
+        background-image: url(https://plus.unsplash.com/premium_photo-1661347859297-859b8ae1d7c5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBtZWV0aW5nfGVufDB8fDB8fHww); /* Replace with your image path */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 160vh;
+        background-attachment: fixed;
+    }
+    .story{
+        width: 100%;
+        height: 50vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+ 
+    }
+    .story .our{
+        width: 50%;
+        padding: 15px;
+        margin: 25px;
+        line-height: 1.6;
+    }
+    .story .our h2{
+        font-size: 46px;
+    }
+    .story .our h1{
+        font-size: 65px;
+    }
+.story .lorem{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.4;
+}
+.saler{
+ width: 100%;
+ height: 100vh;
+ 
+ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+ url(https://media.istockphoto.com/id/1057770826/vector/black-friday-sale-tag-circle-banner-and-the-rope-hanging-on-red-background.jpg?s=612x612&w=0&k=20&c=NoqeYBGtK_9OyGtShVLW-K_CpjU2qOxMUJyxyrOXipg=) no-repeat center center/cover;
+display: flex;
+background-size: 120vh;
+background-attachment: fixed;
+justify-content: center;
+align-items: center;
+background-color: black;
+}
+.saletext{
+ color: white;
+ text-align: center;
+}
+.saletext h2{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+}
+.saletext h1{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#aboutus{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    display: flex;
+        justify-content: space-between;
+    align-items: center;
+}
+#aboutus .atext{
+    width: 50%;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#aboutus .atext h2{
+    color: red;
+    font-size: 30px;
+}
+#aboutus .atext h1{
+    font-size: 38px;
+}
+#aboutus .atext p{
+    padding: 20px;
+    font-family: inherit;
+}
+#aboutus .aimg{
+    width: 50%;
+    padding: 25px;
+    margin: 10px;
+}
+#aboutus .aimg img{
+    width: 100%;
+}
+#serv{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #serv .ser1{
+    width: 50%;
+    
+     line-height: 1.6;
+     padding: 10px;
+     margin-left: 50px;
+    
+  }
+  #serv .ser1 h2{
+    color: red;
+    font-size: 35px;
+  }
+  #serv .ser1 h1{
+    font-size: 45px;
+  }
+  #serv .serbox{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+  #serv .serbox .box1{
+    height: 250px;
+   
+    
+    line-height: 1.4;
+  }
+  #serv .serbox .box1 h2{
+    color: red;
+  }
+  #serv .serbox .box1 .fa-solid{
+    color: red;
+    font-size: 25px;
+  }
+  #last{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://thumbs.dreamstime.com/b/black-wall-texture-rough-background-dark-concrete-floor-old-grunge-155553389.jpg) no-repeat center center/cover;
+   
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    align-items: center;
+}
+#last h2{
+    font-size: 30px;
+    font-family: initial;
+}
+#last h1{
+    font-size: 40px;
+    font-style: oblique;
+}
+#last input[type="submit"]{
+    margin-top: 100px;
+}
+footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-family: inherit;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+
+ footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 12px;
+}
+footer ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+
+}
+input[type="submit"]{
+    color: white;
+    background-color: red;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    
+    transition: all .5s ease;
+    }
+    input[type="submit"]:hover{
+        color: white;
+        background-color: black;
+    }
